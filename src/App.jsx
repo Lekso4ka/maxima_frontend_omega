@@ -13,11 +13,12 @@ function App() {
         AuthService.checkToken(token)
             .then(() => dispatch(login(token)))
             .catch(() => dispatch(logOut()))
-    }, [])
+    },[]);
 
     return (
         <LayoutBase/>
     )
 }
 
-export default App
+
+export default App;

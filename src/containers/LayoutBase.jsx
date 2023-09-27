@@ -18,4 +18,4 @@ function LayoutBase() {
     )
 }
 
-export default LayoutBase
+export default LayoutBase;
