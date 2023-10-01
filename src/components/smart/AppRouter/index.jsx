@@ -2,10 +2,11 @@ import {Route, Routes} from 'react-router-dom'
 import Login from '../../../pages/Login'
 import {publicRoutes} from '../../../routes'
 import {profileConfig} from '../../../routes/profileConfig'
-import {v4 as uuidv4} from 'uuid'
-import Profile from '../../../pages/Profile'
+import {v4 as uuidv4} from 'uuid';
+import Profile from '../../../pages/Profile';
 import {useEffect} from "react";
 import {useSelector} from "react-redux";
+
 
 const AppRouter = () => {
     const role = useSelector(state => state.user.role)
@@ -42,4 +43,4 @@ const AppRouter = () => {
     )
 }
 
-export default AppRouter
+export default AppRouter;

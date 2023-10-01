@@ -1,34 +1,41 @@
-import React from 'react';
+import Profile from '../pages/Profile'
 import NewsPage from "../pages/News";
+import UsersPage from "../pages/Users";
+import MaterialsPage from "../pages/Materials";
+
+
 
 export const profileConfig = {
     "PARTNER": {
         menu: [
             {
-                name: 'КУРСЫ',
-                path: '/News',
-                component: <pages/>,
+                name: 'Главная',
+                path: '/',
+                component: <Profile/>,
                 isMenuItem: true,
                 exact: true,
             },
+
             {
-                name: 'ПОЛЬЗОВАТЕЛИ',
-                path: '/News',
-                component: <pages/>,
+                name: 'Пользователи',
+                path: '/users',
+                component: <UsersPage/>,
                 isMenuItem: true,
                 exact: true,
             },
+
             {
-                name: 'НОВОСТИ',
-                path: '/News',
-                component: <pages/>,
+                name: 'Новости',
+                path: '/news',
+                component: <NewsPage />,
                 isMenuItem: true,
                 exact: true,
             },
+
             {
-                name: 'МАТЕРИАЛЫ',
-                path: '/News',
-                component: <pages/>,
+                name: 'Материалы',
+                path: '/materials',
+                component: <MaterialsPage/>,
                 isMenuItem: true,
                 exact: true,
             },
@@ -46,8 +53,5 @@ export const profileConfig = {
         menu: [
         ],
     },
+     
 }
-
-
-
-export default NewsPage;
