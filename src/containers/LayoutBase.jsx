@@ -3,7 +3,7 @@ import AppRouter from '../components/smart/AppRouter'
 import Header from "../components/ui/Header/HeaderBase";
 import { Layout } from 'antd';
 import CardNews from '../components/ui/CardNews/CardNews'
-
+import { news } from '../assets/data/data'
 
 const { Footer, Content } = Layout;
 
@@ -12,9 +12,9 @@ function LayoutBase() {
     return (
         <Layout>
             <Header />
-            <CardNews />
+            {news.map(myNew => <CardNews myNew={myNew} />)}
             <Content className={'container'}>
-                <AppRouter/>
+                <AppRouter />
             </Content>
             <Footer>© Учебный центр Maxima</Footer>
         </Layout>
