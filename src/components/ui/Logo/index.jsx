@@ -8,9 +8,9 @@ const Logo = () => {
             height: '40px'
         }}>
             <svg
-                width='35'
-                height='31'
-                viewBox='0 0 35 31'
+                width='45'//35
+                height='42'//31
+                viewBox='0 0 45 42'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'
             >
