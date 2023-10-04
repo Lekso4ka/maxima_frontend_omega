@@ -1,35 +1,34 @@
 import React, {useEffect, useState} from 'react';
 import Title from "antd/lib/typography/Title";
 import {Button, Space} from "antd";
+import  {API_URL} from "../../core/http";
+import NewsService from "../../core/services/NewsService";
+import CreateNewsModal from "../../containers/Modal/CreateNewsModal";
 import CardBase from "../../components/ui/CardBase";
-import CoursesService from "../../core/services/NewsService";
-import CreateCoursesModal from "../../containers/Modal/CreateCoursesModal";
-import {API_URL} from "../../core/http";
 
-
-
-const Courses = () => {
-    const [Courses, setUser] = useState([]);
+const NewsPage  = () => {
+    const [news, setUser] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
         setIsModalOpen(true);
     };
+
     useEffect(() => {
-        CoursesService.getAllCourses()
+        NewsService.getAllNews()
             .then(r => setUser(r.data.data))
     }, [isModalOpen])
 
     return (
         <>
             <Space align={'start'} wrap={true} size={100}>
-                <Title level={3}>Курсы</Title>
+                <Title level={3}>Новости</Title>
                 <Button type="primary" onClick={showModal}>
-                Создать Курсы
+                Создать новость
                 </Button>
             </Space>
             <Space align={'start'} wrap={true}>
                 {
-                    Courses.map(n => <CardBase
+                    news.map(n => <CardBase
                         key={n.id}
                         img={`${API_URL}/files/${n.titleImage.storageFileName}`}
                         title={n.title}
@@ -37,9 +36,9 @@ const Courses = () => {
                     />)
                 }
             </Space>
-            <CreateCoursesModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+            <CreateNewsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
         </>
     );
 };
 
-export default Courses;
+export default NewsPage;

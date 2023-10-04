@@ -1,14 +1,15 @@
 import React, {useEffect} from 'react'
 import './style/style.scss'
-
-import AppRouter from '../components/smart/AppRouter'
+import LayoutBase from './containers/LayoutBase'
 import AuthService from "./core/services/AuthService";
 import {useDispatch} from "react-redux";
 import {login, logOut} from "./core/store/features/user/userSlice";
-import { Link } from 'react-router-dom';
-import { Route } from "react-router-dom";
-//import AppRouter from './components/AppRouter.js'
-//import { Route } from "react-router-dom";
+import { Router,Route, Link } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom"
+import  Home   from './Home';
+import Materials from './Materials';
+import News  from './News';
+import Users  from './Users'; 
 //import Header from "../components/Header/Header";
 
 
@@ -22,21 +23,48 @@ function App() {
             .catch(() => dispatch(logOut()))
     }, [])
 
+return (
 
-    return (
-
-        //<Header>
-        <AppRouter>
-        <Route path="/courses" element={<Link />}></Route>
-        <Route path="/users" element={<Link />}></Route>
-        <Route path="/news" element={<Link />}></Route>
-        <Route path="/materials" element={<Link />}></Route>
-        </AppRouter>
-// </Header>
-    )
+  <LayoutBase/>
+)
+  
 }
+const Router = ReactRouterDOM.BrowserRouter;
+const Route = ReactRouterDOM.Route;
+const Link = ReactRouterDOM.Link;
 
-
-
-
+function Home(){ return <h2>Главная</h2>; }
+function Users(){ return <h2>Пользователи</h2>; }
+function News(){return <h2>Новости</h2>; }
+function Materials (){return <h2>Материалы</h2>; }
+function Content(){
+    return <div>
+            <h2></h2>
+          </div>;
+}
+function Nav(){
+    return <nav>
+              <Link to="/home">Главная</Link>
+              <Link to="/users">Пользователи</Link>
+              <Link to="/news">Новости</Link>
+              <Link to="/materials">Материалы</Link>
+        </nav>;
+}
+ReactDOM.createRoot(
+    document.getElementById("app")
+)
+.render(
+  <Router>
+      <div>
+        <Nav />
+        <Route path="/home" element={<Home />} />
+        <Route path="/users" element={ <Users/>} />
+          <Route path="/news" element={<News />} />
+          <Route path="materials" element={<Materials />} />
+      </div>
+  </Router>
+  );
+  
+ 
+ 
 export default App;

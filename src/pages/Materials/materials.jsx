@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import Title from "antd/lib/typography/Title";
 import {Button, Space} from "antd";
-import CardBase from "../../components/ui/CardBase";
+import  {API_URL} from "../../core/http";
 import MaterialsService from "../../core/services/MaterialsService";
-import CreateMaterialsModal from "../../containers/Modal/CreateMaterialssModal";
-import {API_URL} from "../../core/http";
+import CreateMaterialsModal from "../../containers/Modal/CreateMaterialsModal";
+import CardBase from "../../components/ui/CardBase";
 
 const Materials = () => {
     const [Materials, setUser] = useState([]);
@@ -21,9 +21,9 @@ const Materials = () => {
     return (
         <>
             <Space align={'start'} wrap={true} size={100}>
-                <Title level={3}></Title>
+                <Title level={3}>Материал</Title>
                 <Button type="primary" onClick={showModal}>
-                Создать новость
+                Создать Материал
                 </Button>
             </Space>
             <Space align={'start'} wrap={true}>

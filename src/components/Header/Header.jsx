@@ -1,15 +1,19 @@
 import React from 'react';
-import './style/style.scss'
+//import './style/style.scss'
+
+
 
 const Header = () => {
 return (
 
-    <header>
+    <header> 
 <div className="header__logo">  </div>
 < h2>Учебный центр Maxima</h2>
-    </header>
+
+      </header>
 )
 
 }
+
 
 export default Header;

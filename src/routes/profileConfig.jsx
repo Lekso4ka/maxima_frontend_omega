@@ -1,9 +1,8 @@
+import React from 'react';
 import Profile from '../pages/Profile'
-import NewsPage from "../pages/News";
-import UsersPage from "../pages/Users";
-import MaterialsPage from "../pages/Materials";
-
-
+import NewsPages from "../pages/News";
+import UsersPages from "../pages/Users";
+import MaterialsPages from "../pages/Materials";
 
 export const profileConfig = {
     "PARTNER": {
@@ -19,7 +18,7 @@ export const profileConfig = {
             {
                 name: 'Пользователи',
                 path: '/users',
-                component: <UsersPage/>,
+                component: <UsersPages/>,
                 isMenuItem: true,
                 exact: true,
             },
@@ -27,7 +26,7 @@ export const profileConfig = {
             {
                 name: 'Новости',
                 path: '/news',
-                component: <NewsPage />,
+                component: <NewsPages />,
                 isMenuItem: true,
                 exact: true,
             },
@@ -35,7 +34,7 @@ export const profileConfig = {
             {
                 name: 'Материалы',
                 path: '/materials',
-                component: <MaterialsPage/>,
+                component: <MaterialsPages/>,
                 isMenuItem: true,
                 exact: true,
             },

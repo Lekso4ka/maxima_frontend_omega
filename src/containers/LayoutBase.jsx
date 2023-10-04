@@ -1,29 +1,35 @@
 import React from 'react'
-import AppRouter from '../components/smart/AppRouter'
-import Header from "../components/Header/Header";
-//import Header from "../components/ui/Header/HeaderBase";
-//import { Layout } from 'antd';
-//import LayoutBase  from "../components/ui/containers/LayoutBase";
+import AppRouter from '../components/smart/AppRouter';
+import { Layout } from 'antd';
 import { Route } from "react-router-dom";
-//import { Router } from "react-router-dom";
-//const { Footer, Content } = Layout;
+import { Router } from "react-router-dom";
+import CardNews from '../components/ui/CardNews/CardNews';
+import { news } from '../assets/data/data';
+import Header from "../components/Header/Header";
+
+const {Content } = Layout;
 
 function LayoutBase () {
 
     return (
-       
-        <LayoutBase>
+    
+      <Layout>
         <Header />
-        <AppRouter>
-    <Route path="/courses" component="<Courses>"/>
-<Route path="/users" component="<Users>"/>
-<Route path="/news" component="<News>"/>
-<Route path="/materials" component="<Materials>"/>
-</AppRouter>
 
-</LayoutBase>
-  )
-}
+      {news.map(myNew => <CardNews myNew={myNew} />)}
+      <Content className={'container'}>
+                <AppRouter />
+            </Content>
+      <Router>
+  <Route path="/home "element="<pages>"/>   
+<Route path="/users"element="<pages>"/>
+<Route path="/news"element ="<pages>"/>
+<Route path="/materials"element ="<pages>"/>
+    </Router>
+    </Layout>
+   )
+      
+  }
 
 
 

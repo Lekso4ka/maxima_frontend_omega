@@ -6,6 +6,8 @@ import UsersService from "../../core/services/UsersService";
 import CreateUsersModal from "../../containers/Modal/CreateUsersModal";
 import {API_URL} from "../../core/http";
 
+
+
 const Users = () => {
     const [Users, setUser] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +25,7 @@ const Users = () => {
             <Space align={'start'} wrap={true} size={100}>
                 <Title level={3}>Пользователи</Title>
                 <Button type="primary" onClick={showModal}>
-                Создать новость
+                Спиок Пользователей
                 </Button>
             </Space>
             <Space align={'start'} wrap={true}>
