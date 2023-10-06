@@ -4,7 +4,11 @@ import {Routes, Route} from "react-router-dom"
 import Header from "../components/Header/Header";
 
 import Home from '../pages/Home/home.jsx';
+<<<<<<< HEAD
 import Materials from '../pages/Materials/materials';
+=======
+import Materials from '../pages/Materials/Materials';
+>>>>>>> master
 import News  from '../pages/News';
 import Users  from '../pages/Users/users';
 

@@ -1,4 +1,5 @@
 import React  from 'react';
+<<<<<<< HEAD
 import {person} from './users.json';
 
 const Users = () => {
@@ -30,6 +31,12 @@ const Users = () => {
         </>
     );
 };
+=======
+
+function Users() {
+    return <h2>Пользователи</h2>
+}
+>>>>>>> master
 
 
 
