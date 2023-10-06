@@ -1,46 +1,41 @@
-import React, {useEffect, useState} from 'react';
-import Title from "antd/lib/typography/Title";
-import {Button, Space} from "antd";
-import CardBase from "../../components/ui/CardBase";
-import UsersService from "../../core/services/UsersService";
-import CreateUsersModal from "../../containers/Modal/CreateUsersModal";
-import {API_URL} from "../../core/http";
-
-
+import React  from 'react';
+import {person} from './users.json';
 
 const Users = () => {
-    const [Users, setUser] = useState([]);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const showModal = () => {
-        setIsModalOpen(true);
-    };
-
-    useEffect(() => {
-        UsersService.getAllUsers()
-            .then(r => setUser(r.data.data))
-    }, [isModalOpen])
-
     return (
         <>
-            <Space align={'start'} wrap={true} size={100}>
-                <Title level={3}>Пользователи</Title>
-                <Button type="primary" onClick={showModal}>
-                Спиок Пользователей
-                </Button>
-            </Space>
-            <Space align={'start'} wrap={true}>
-                {
-                    Users.map(n => <CardBase
-                        key={n.id}
-                        img={`${API_URL}/files/${n.titleImage.storageFileName}`}
-                        title={n.title}
-                        desc={n.text}
-                    />)
-                }
-            </Space>
-            <CreateUsersModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+            <h2>Пользователи</h2>
+            <div>
+                <h3>TEACHER</h3>
+                {person.map((person) => (
+                    <div key={person.id}>
+                        <h3>{person.name}</h3>
+                    </div>
+                ))}
+            </div>
+           <div>
+                <h3>STUDENT</h3>
+                {person.map((person) => (
+                    <div key={person.id}>
+                        <h3>{person.name}</h3>
+                        <p>
+                            <b>{person.name}:</b>
+                            {' ' + person.profession + ' '}
+                            known for{' '}
+                            {person.accomplishment}
+                        </p>
+                    </div>
+                ))}
+            </div>
         </>
     );
 };
+
+
+
+
+
+           
+    
 
 export default Users;

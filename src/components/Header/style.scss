@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    color: rgb(221, 195, 245);
+
     align-items: center;
     padding: 10px;
 }
@@ -10,4 +10,9 @@ header {
 
     
     font-weight: 900;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
 }

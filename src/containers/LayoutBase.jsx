@@ -1,36 +1,32 @@
 import React from 'react'
-import AppRouter from '../components/smart/AppRouter';
-import { Layout } from 'antd';
-import { Route } from "react-router-dom";
-import { Router } from "react-router-dom";
-import CardNews from '../components/ui/CardNews/CardNews';
-import { news } from '../assets/data/data';
+import {Layout} from 'antd';
+import {Routes, Route} from "react-router-dom"
 import Header from "../components/Header/Header";
 
-const {Content } = Layout;
+import Home from '../pages/Home/home.jsx';
+import Materials from '../pages/Materials/materials';
+import News  from '../pages/News';
+import Users  from '../pages/Users/users';
 
-function LayoutBase () {
+const {Content} = Layout;
+
+function LayoutBase() {
 
     return (
-    
-      <Layout>
-        <Header />
-
-      {news.map(myNew => <CardNews myNew={myNew} />)}
-      <Content className={'container'}>
-                <AppRouter />
+        <Layout>
+            <Header/>
+            <Content className={'container'}>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/users" element={<Users/>}/>
+                    <Route path="/news" element={<News/>}/>
+                    <Route path="/materials" element={<Materials/>}/>
+                </Routes>
             </Content>
-      <Router>
-  <Route path="/home "element="<pages>"/>   
-<Route path="/users"element="<pages>"/>
-<Route path="/news"element ="<pages>"/>
-<Route path="/materials"element ="<pages>"/>
-    </Router>
-    </Layout>
-   )
-      
-  }
+        </Layout>
+    )
 
+}
 
 
 export default LayoutBase;

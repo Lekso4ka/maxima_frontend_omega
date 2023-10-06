@@ -1,0 +1,130 @@
+
+{
+  "TEACHER": [
+{
+    "id": 0,
+    "firstName": "Elena",
+    "lastName": "Kolosova",
+    "patronymic": "Ivanovna",
+    "email": "elena0@mail.com",
+    "login": "1234",
+    "gender":"Female" ,
+    "birthDate": "yyyy-mm-dd"
+  },{
+    "id": 1,
+    "firstName": "Alexandr",
+    "lastName ": "Petrov",
+    "patronymic": "Valerevich",
+    "email": "Alexandr@mail.com",
+    "login": "1234",
+    "gender":"male" ,
+    "birthDate": "yyyy-mm-dd"
+}, {
+  "id": 2,
+  "firstName": "Denis",
+  "lastName ": "Kovalev",
+  "patronymic": "Andreevich",
+  "email": "Denis@mail.com",
+  "login": "1234",
+  "gender":"male" ,
+  "birthDate": "yyyy-mm-dd"
+}
+] }
+ 
+{
+  "STUDENT": [
+{
+  "id": 0,
+  "firstName": "Anna",
+  "lastName ": "Pavlova",
+  "patronymic": "Nikolaevna",
+  "email": "Anna@bloomberg.com",
+  "login": "1234",
+  "gender":"Female" ,
+  "birthDate": "yyyy-mm-dd"
+  },{
+  "id": 1,
+  "firstName": "Alex",
+  "lastName ": "Nguyen",
+  "patronymic": "Ivanovith",
+  "email": "Alex@mail.com",
+  "login": "1234",
+  "gender":"male" ,
+  "birthDate": "yyyy-mm-dd"
+},{
+  "id": 2,
+  "firstName": "Maxim",
+  "lastName ": "Sedush",
+  "patronymic": "Ivanovith",
+  "email": "Maxim@bloomberg.com",
+  "login": "1234",
+  "gender":"male" ,
+  "birthDate": "yyyy-mm-dd"
+  },{
+  "id": 3,
+  "firstName": "Elena",
+  "lastName ": "Vasilenko",
+  "patronymic": "Vladimirovna",
+  "email": "Elena8@bloomberg.com",
+  "login": "1234",
+  "gender":"Female" ,
+  "birthDate": "yyyy-mm-dd"
+},{
+  "id": 4,
+  "firstName": "Dmitriy",
+  "lastName ": "Kovalev",
+  "patronymic": "Artemovith",
+  "email": "Dmitriy@bloomberg.com",
+  "login": "1234",
+  "gender":"male" ,
+  "birthDate": "yyyy-mm-dd"
+  },{
+  "id": 5,
+  "firstName": "Dmitriy",
+  "lastName ": "Nguyen",
+  "patronymic": "",
+  "email": "Dmitriy5@bloomberg.com",
+  "login": "1234",
+  "gender":"male" ,
+  "birthDate": "yyyy-mm-dd"
+},{
+  "id": 6,
+  "firstName": "Nataliay",
+  "lastName ": "Ivanova",
+  "patronymic": "Ivanovna",
+  "email": "Nataliay0@bloomberg.com",
+  "login": "1234",
+  "gender":"Female" ,
+  "birthDate": "yyyy-mm-dd"
+  },{
+  "id": 7,
+  "firstName": "Alexandra",
+  "lastName ": "Sedush",
+  "patronymic": "Andreevna",
+  "email": "Alexandra0@bloomberg.com",
+  "login": "1234",
+  "gender":"Female" ,
+  "birthDate": "yyyy-mm-dd"
+},{
+  "id": 8,
+  "firstName": "Artem",
+  "lastName ": "Yasen",
+  "patronymic": "Vladimirovith",
+  "email": "Artem@bloomberg.com",
+  "login": "1234",
+  "gender":"male" ,
+  "birthDate": "yyyy-mm-dd"
+  },{
+  "id": 9,
+  "firstName": "Vladimir",
+  "lastName ": "Vasielev",
+  "patronymic": "Vladimirovith",
+  "email": "Vladimir@bloomberg.com",
+  "login": "1234",
+  "gender":"male" ,
+  "birthDate": "yyyy-mm-dd"
+}
+] },
+
+
+
