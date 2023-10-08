@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import AppRouter from '../components/smart/AppRouter'
 import Header from "../components/ui/Header/HeaderBase";
 import { Layout } from 'antd';
@@ -15,14 +15,17 @@ function LayoutBase() {
     return (
 
         <Layout>
-            <Header />
+                        <Header />
             <Content className={'container'}>
                 <AppRouter />
             </Content>
             <div className={'wrapper'}>
                 <h1>Откройте пожалуйста модальное окно! :D </h1>
                 <button className={'buttonOpen'} onClick={() => { setModalOpen(true); }}> ОТКРЫТЬ </button>
-                {modalOpen && <ModalWin setOpenModal={setModalOpen} />}
+                {modalOpen && <ModalWin setOpenModal={setModalOpen}> 
+                <h2>Вы только что открыли модальное окно! </h2>
+            <p>Поздравляем!</p>
+                </ModalWin>  }
             </div>
             <Footer>© Учебный центр Maxima</Footer>
         </Layout>
