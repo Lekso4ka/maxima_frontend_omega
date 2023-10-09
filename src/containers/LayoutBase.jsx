@@ -1,24 +1,30 @@
-import React from 'react'
-import AppRouter from '../components/smart/AppRouter'
-import Header from "../components/ui/Header/HeaderBase";
+import React from 'react' 
+import Header from "../components//Header/Header";
 import { Layout } from 'antd';
-import CardNews from '../components/ui/CardNews/CardNews'
-import { news } from '../assets/data/data'
+import { Routes, Route } from "react-router-dom"
+import Home from '../pages/Home/home.jsx';
+import Materials from '../pages/Materials/Materials';
+import News from '../pages/News';
+import Users from '../pages/Users/users';
 
-const { Footer, Content } = Layout;
+const { Content } = Layout;
 
 function LayoutBase() {
 
     return (
         <Layout>
             <Header />
-            {news.map(myNew => <CardNews myNew={myNew} />)}
             <Content className={'container'}>
-                <AppRouter />
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/users" element={<Users/>}/>
+                    <Route path="/news" element={<News/>}/>
+                    <Route path="/materials" element={<Materials/>}/>
+                </Routes>
             </Content>
-            <Footer>© Учебный центр Maxima</Footer>
         </Layout>
     )
 }
 
-export default LayoutBase
+
+export default LayoutBase;

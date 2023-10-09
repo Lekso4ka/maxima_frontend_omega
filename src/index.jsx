@@ -5,6 +5,8 @@ import {BrowserRouter} from 'react-router-dom'
 import {store} from './core/store'
 import {Provider} from 'react-redux'
 
+
+
 const container = document.getElementById('root')
 const root = createRoot(container)
 
