@@ -1,5 +1,6 @@
 import React from 'react'
-import {Layout} from 'antd';
+import { Layout } from 'antd';
+import "./LayoutBase.css";
 import {Routes, Route} from "react-router-dom"
 import Header from "../components/Header/Header";
 
@@ -8,10 +9,11 @@ import Materials from '../pages/Materials/Materials';
 import News  from '../pages/News';
 import Users  from '../pages/Users/users';
 
-const {Content} = Layout;
+const {Content, Footer} = Layout;
+
 
 function LayoutBase() {
-
+    
     return (
         <Layout>
             <Header/>
@@ -23,6 +25,7 @@ function LayoutBase() {
                     <Route path="/materials" element={<Materials/>}/>
                 </Routes>
             </Content>
+            <Footer>© Учебный центр Maxima</Footer>
         </Layout>
     )
 
