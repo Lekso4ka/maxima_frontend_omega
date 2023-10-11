@@ -9,7 +9,7 @@ import Materials from '../pages/Materials/Materials';
 import News  from '../pages/News';
 import Users  from '../pages/Users/users';
 
-const {Content} = Layout;
+const {Content, Footer} = Layout;
 
 
 function LayoutBase() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {news} from "../../assets/data/data";
 import CardNews from "../../components/ui/CardNews/CardNews";
-import ModalWin from "../components/ui/ModalWin/ModalWin";
+import ModalWin from "../../components/ui/ModalWin/ModalWin";
 
 const Home = () => {
     const [modalOpen, setModalOpen] = useState(false);
