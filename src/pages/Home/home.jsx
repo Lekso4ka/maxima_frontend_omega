@@ -8,7 +8,12 @@ const Home = () => {
     return (
         <>
             <h2>Главная</h2>
-            {news.map(myNew => <CardNews myNew={myNew}/>)}
+            {news.map(myNew => <CardNews
+                title={myNew.title}
+                data={myNew.data}
+                url={myNew.url}
+            />)}
+
             <div className={'wrapper'}>
                 <h1>Откройте пожалуйста модальное окно! :D </h1>
                 <button 
