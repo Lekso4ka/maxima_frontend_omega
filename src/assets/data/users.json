@@ -1,0 +1,127 @@
+{
+    "teacher": [
+       {
+         "role": 0,
+         "firstName": "Elena",
+         "lastName": "Kolosova",
+         "patronymic": "Ivanovna",
+         "email": "elena0@mail.com",
+         "login": "ele77na",
+         "gender":"Female" ,
+         "birthDate": "2001-05-17"
+       },{
+         "role": 1,
+         "firstName": "Alexandr",
+         "lastName ": "Petrov",
+         "patronymic": "Valerevich",
+         "email": "Alexandr@mail.com",
+         "login": "alex77",
+         "gender":"Male" ,
+         "birthDate": "1990-03-12"
+     }, {
+       "role": 2,
+       "firstName": "Denis",
+       "lastName ": "Kovalev",
+       "patronymic": "Andreevich",
+       "email": "Denis@mail.com",
+       "login": "d44nis",
+       "gender":"Male" ,
+       "birthDate": "1995-01-14"
+     }
+   ]},
+   
+   {
+     "student": [
+     {
+       "role": 0,
+       "firstName": "Anna",
+       "lastName ": "Pavlova",
+       "patronymic": "Nikolaevna",
+       "email": "Anna@bloomberg.com",
+       "login": "a7b2",
+       "gender":"Female" ,
+       "birthDate": "1997-03-26"
+       },{
+       "role": 1,
+       "firstName": "Alex",
+       "lastName ": "Nguyen",
+       "patronymic": "Ivanovith",
+       "email": "Alex@mail.com",
+       "login": "al2xx4",
+       "gender":"Male" ,
+       "birthDate": "1985-07-14"
+     },{
+       "role": 2,
+       "firstName": "Maxim",
+       "lastName ": "Sedush",
+       "patronymic": "Ivanovith",
+       "email": "Maxim@bloomberg.com",
+       "login": "1max4",
+       "gender":"Male" ,
+       "birthDate": "1997-03-16"
+       },{
+       "role": 3,
+       "firstName": "Elena",
+       "lastName ": "Vasilenko",
+       "patronymic": "Vladimirovna",
+       "email": "Elena8@bloomberg.com",
+       "login": "elena24",
+       "gender":"Female" ,
+       "birthDate": "2000-11-19"
+     },{
+       "role": 4,
+       "firstName": "Dmitriy",
+       "lastName ": "Kovalev",
+       "patronymic": "Artemovith",
+       "email": "Dmitriy@bloomberg.com",
+       "login": "1dm34",
+       "gender":"Male" ,
+       "birthDate": "1998-03-14"
+       },{
+       "role": 5,
+       "firstName": "Dmitriy",
+       "lastName ": "Nguyen",
+       "patronymic": "",
+       "email": "Dmitriy5@bloomberg.com",
+       "login": "dm8tr3",
+       "gender":"Male" ,
+       "birthDate": "2001-07-04"
+     },{
+       "role": 6,
+       "firstName": "Nataliay",
+       "lastName ": "Ivanova",
+       "patronymic": "Ivanovna",
+       "email": "Nataliay0@bloomberg.com",
+       "login": "8nat35",
+       "gender":"Female" ,
+       "birthDate": "2004-02-07"
+       },{
+       "role": 7,
+       "firstName": "Alexandra",
+       "lastName ": "Sedush",
+       "patronymic": "Andreevna",
+       "email": "Alexandra0@bloomberg.com",
+       "login": "alex88sa",
+       "gender":"Female" ,
+       "birthDate": "2002-04-19"
+     },{
+       "role": 8,
+       "firstName": "Artem",
+       "lastName ": "Yasen",
+       "patronymic": "Vladimirovith",
+       "email": "Artem@bloomberg.com",
+       "login": "art@02",
+       "gender":"Male" ,
+       "birthDate": "2002-09-11"
+       },{
+       "role": 9,
+       "firstName": "Vladimir",
+       "lastName ": "Vasielev",
+       "patronymic": "Vladimirovith",
+       "email": "Vladimir@bloomberg.com",
+       "login": "vla5dim4",
+       "gender":"Male" ,
+       "birthDate": "1999-06-09"
+     }
+     ] }
+   
