@@ -1,7 +1,12 @@
+//import { Table } from 'react-table'
 import React  from 'react';
+//import CardTable from './components/ui/CardTable'
 
-function Users() {
+
+const Users = () => {
     return <h2>Пользователи</h2>
-}
+};
+
+
 
 export default Users;
