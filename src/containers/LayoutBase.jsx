@@ -18,7 +18,7 @@ function LayoutBase() {
             <Content className={'container'}>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/users" element={<Users/>}/>
+                    <Route path="/sers" element={<Users/>}/>
                     <Route path="/news" element={<News/>}/>
                     <Route path="/materials" element={<Materials/>}/>
                 </Routes>

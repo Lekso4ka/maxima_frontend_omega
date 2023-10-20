@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useState } from 'react';
 import './style/style.scss'
 import LayoutBase from './containers/LayoutBase'
 // import AuthService from "./core/services/AuthService";
@@ -19,6 +19,7 @@ function App() {
 
     return (
       <LayoutBase/>
+   
     )
   
 }
