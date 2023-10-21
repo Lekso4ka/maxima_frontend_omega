@@ -6,9 +6,6 @@ import AuthService from "./core/services/AuthService";
 import { useDispatch } from "react-redux";
 import { login, logOut } from "./core/store/features/user/userSlice";
 
-// import AuthService from "./core/services/AuthService";
-// import {useDispatch} from "react-redux";
-// import {login, logOut} from "./core/store/features/user/userSlice";
 
 
 function App() {
@@ -28,7 +25,6 @@ function App() {
 
 
     )
-
 }
 
 /*
