@@ -1,17 +1,80 @@
-.table {
+.Table {
+    width: 1200px;
+    margin-bottom: 40px;
+    border: 2px solid #c4c1c1;
     border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background:#faf4f4; 
 }
 
-th {
-    border-bottom: 1px solid black;
-}
+.table th {
+    width: 1200px;
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    font-size: 20px;
+    background:#e0dfdf; 
+    color: #6d6c6c;
+    line-height: 20px;
+text-align: left;
+    }
 
-td {
-    text-align: center;
-}
+    .table_role {
+        border: 1px solid #dddddd;
+        padding: 5px;
+        padding: 15px;
+        color: #ec212b;
+        font-weight: bolder;
+        }
+        
+        .table_firstName {
+            border: 1px solid #dddddd;
+            padding: 5px;
+            padding: 15px;
+            }
+            .table_lastName {
+                border: 1px solid #dddddd;
+                padding: 5px;
+                padding: 15px;
+                }
+                .table_patronymic {
+                    border: 1px solid #dddddd;
+                    padding: 5px;
+                    padding: 15px;
+                    }
+                    .table_login {
+                        border: 1px solid #dddddd;
+                        padding: 5px;
+                        padding: 15px;
+                        }
+                        
+                        .table_email {
+                            border: 1px solid #dddddd;
+                            padding: 5px;
+                            padding: 15px;
+                            }
+                        
+                            .table_birthDate {
+                                border: 1px solid #dddddd;
+                            padding: 5px;
+                            padding: 15px;
+                                }
+                        
+                                .table_management{
+                                    border: 1px solid #dddddd;
+                                    padding: 5px;
+                                    padding: 15px;
+                                    
+                                    }
+
+                                    .button{
+                                        outline: 0;
+                                        border: none;
+                                       border-bottom: 5px solid #6b6b6b;
+                                       background: linear-gradient( 0deg, #a8a8a8, #fcc5c2);
+                                       font-size: 12px;
+                                       font-family: sans-serif;
+                                       text-transform: uppercase;
+                                       padding: 5px;
+                                       border-radius: 7px;
+                                    }
+                                     

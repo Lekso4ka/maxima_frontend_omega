@@ -1,13 +1,13 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../ui/Logo";
-import {useDispatch} from "react-redux";
-import {logOut} from "../../core/store/features/user/userSlice";
-import {LogoutOutlined} from "@ant-design/icons";
-import {Button} from "antd";
+import { useDispatch } from "react-redux";
+import { logOut } from "../../core/store/features/user/userSlice";
+import { LogoutOutlined } from "@ant-design/icons";
+import { Button } from "antd";
 import './style.scss'
 
-function Nav(){
+function Nav() {
       return <nav>
             <Link to="/">Главная</Link>
             <Link to="/users">Пользователи</Link>
@@ -22,12 +22,12 @@ const Header = () => {
       const logOutHandler = () => dispatch(logOut())
       return (
 
-          <header>
-                <Logo/>
-                <Nav/>
-                <Button onClick={logOutHandler} icon={<LogoutOutlined />}/>
+            <header>
+                  <Logo />
+                  <Nav />
+                  <Button onClick={logOutHandler} icon={<LogoutOutlined />} />
 
-          </header>
+            </header>
       )
 
 }
