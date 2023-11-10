@@ -6,6 +6,7 @@
     "@ant-design/icons": "^5.0.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@expo/vector-icons": "^13.0.0",
     "@mui/material": "file:emotion/react@emotion/styled",
     "@reduxjs/toolkit": "^1.9.2",
     "antd": "^5.1.7",
@@ -20,7 +21,7 @@
     "react-scripts": "5.0.1",
     "react-table": "^7.8.0",
     "react-transition-group": "^4.4.5",
-    "@expo/vector-icons": "^13.0.0",
+    "redux": "^4.2.1",
     "sass": "^1.68.0"
   },
   "scripts": {
