@@ -41,7 +41,7 @@ const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
             <ModalWin setOpenModal={setIsNewsWinOpen}>
                 <form onSubmit={handleNewsWinOk}>
                     <input placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
-                    <input type="url" value={titleImage} src=" " placeholder="Image" />
+                    <input type="url" value={titleImage} src=" " placeholder="Image"  />
                      <Checkbox onChange={onChange}>forStudents</Checkbox>
                 <Checkbox onChange={onChange}>forTeachers</Checkbox> 
                     <TextArea rows={4} placeholder="Текст" value={text} onChange={(e) => setText(e.target.value)} />
