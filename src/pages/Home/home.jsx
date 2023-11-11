@@ -8,10 +8,11 @@ const Home = () => {
     return (
         <>
             <h2>Главная</h2>
-            {news.map(myNew => <CardNews
+            {news.map((myNew, i) => <CardNews
                 title={myNew.title}
                 data={myNew.data}
                 url={myNew.url}
+                key={i}
             />)}
 
             <div className={'wrapper'}>
