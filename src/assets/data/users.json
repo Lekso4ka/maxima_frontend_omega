@@ -11,7 +11,7 @@
        },{
          "role": "TEACHER",
          "firstName": "Alexandr",
-         "lastName ": "Petrov",
+         "lastName": "Petrov",
          "patronymic": "Valerevich",
          "email": "Alexandr@mail.com",
          "login": "alex77",
@@ -20,7 +20,7 @@
      }, {
        "role":"TEACHER" ,
        "firstName": "Denis",
-       "lastName ": "Kovalev",
+       "lastName": "Kovalev",
        "patronymic": "Andreevich",
        "email": "Denis@mail.com",
        "login": "d44nis",
@@ -30,7 +30,7 @@
    {
        "role": "STUDENT",
        "firstName": "Anna",
-       "lastName ": "Pavlova",
+       "lastName": "Pavlova",
        "patronymic": "Nikolaevna",
        "email": "Anna@bloomberg.com",
        "login": "a7b2",
@@ -39,7 +39,7 @@
        },{
        "role": "STUDENT",
        "firstName": "Alex",
-       "lastName ": "Nguyen",
+       "lastName": "Nguyen",
        "patronymic": "Ivanovith",
        "email": "Alex@mail.com",
        "login": "al2xx4",
@@ -48,7 +48,7 @@
      },{
        "role":"STUDENT" ,
        "firstName": "Maxim",
-       "lastName ": "Sedush",
+       "lastName": "Sedush",
        "patronymic": "Ivanovith",
        "email": "Maxim@bloomberg.com",
        "login": "1max4",
@@ -57,7 +57,7 @@
        },{
        "role":"STUDENT" ,
        "firstName": "Elena",
-       "lastName ": "Vasilenko",
+       "lastName": "Vasilenko",
        "patronymic": "Vladimirovna",
        "email": "Elena8@bloomberg.com",
        "login": "elena24",
@@ -66,7 +66,7 @@
      },{
        "role":"STUDENT",
        "firstName": "Dmitriy",
-       "lastName ": "Kovalev",
+       "lastName": "Kovalev",
        "patronymic": "Artemovith",
        "email": "Dmitriy@bloomberg.com",
        "login": "1dm34",
@@ -75,8 +75,8 @@
        },{
        "role":"STUDENT",
        "firstName": "Dmitriy",
-       "lastName ": "Nguyen",
-       "patronymic": "",
+       "lastName": "Nguyen",
+       "patronymic": "Alexandrovith",
        "email": "Dmitriy5@bloomberg.com",
        "login": "dm8tr3",
        "gender":"MALE" ,
@@ -84,7 +84,7 @@
      },{
        "role": "STUDENT",
        "firstName": "Nataliay",
-       "lastName ": "Ivanova",
+       "lastName": "Ivanova",
        "patronymic": "Ivanovna",
        "email": "Nataliay0@bloomberg.com",
        "login": "8nat35",
@@ -93,7 +93,7 @@
        },{
        "role": "STUDENT",
        "firstName": "Alexandra",
-       "lastName ": "Sedush",
+       "lastName": "Sedush",
        "patronymic": "Andreevna",
        "email": "Alexandra0@bloomberg.com",
        "login": "alex88sa",
@@ -102,7 +102,7 @@
      },{
        "role":"STUDENT",
        "firstName": "Artem",
-       "lastName ": "Yasen",
+       "lastName": "Yasen",
        "patronymic": "Vladimirovith",
        "email": "Artem@bloomberg.com",
        "login": "art@02",
@@ -111,7 +111,7 @@
        },{
        "role":"STUDENT" ,
        "firstName": "Vladimir",
-       "lastName ": "Vasielev",
+       "lastName": "Vasielev",
        "patronymic": "Vladimirovith",
        "email": "Vladimir@bloomberg.com",
        "login": "vla5dim4",
