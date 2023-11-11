@@ -14,14 +14,13 @@ export const tagSlice = createSlice({
     reducers: {
         addTags: (state, action) => {
             state.data.push({
-                 id: state.data.length[state.data.length - 1].id + 1,
-                 tag: action.payload 
+                 id: state.data[state.data.length - 1].id + 1,
+                 text: action.payload 
             })
-           
         },
         dellTags: (state, action) => {
 
-            state.data = state.data.filter(el => el.data !== action.payload)
+            state.data = state.data.filter(el => el.id !== action.payload)
         }
     }
 })
