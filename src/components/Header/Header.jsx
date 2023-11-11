@@ -11,6 +11,7 @@ function Nav() {
 
       return <nav>
             <Link to="/">Главная</Link>
+            <Link to="/courses">Курсы</Link>
             <Link to="/users">Пользователи</Link>
             <Link to="/news">Новости</Link>
             <Link to="/materials">Материалы</Link>
