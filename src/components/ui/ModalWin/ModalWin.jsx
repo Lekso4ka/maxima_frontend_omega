@@ -15,7 +15,7 @@ function ModalWin({ setOpenModal, children }) {
             <h2>Вы только что открыли модальное окно! </h2>
             <p>Поздравляем!</p>
           </div> */}
-          {children}
+          <div>{children}</div>
           {/* <img src="./images/cathello.jpg" alt="" /> */}
           <div className={'footerModal'}>
             <button className={'cancel'}

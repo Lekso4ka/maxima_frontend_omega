@@ -2,6 +2,7 @@ import { Input, Modal, Space, Checkbox, Image } from 'antd';
 import TextArea from "antd/es/input/TextArea";
 import { useState } from "react";
 
+
 const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
     const [title, setTitle] = useState('');
     const [text, setText] = useState('');
@@ -10,10 +11,10 @@ const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
     const [img, setImg] = useState("");
 
 
+    // const onChange = (e) => {
+    //     console.log(`checked = ${e.target.checked}`);
+    // };
 
-    const onChange = (e) => {
-        console.log(`checked = ${e.target.checked}`);
-    };
 
     // const dataNews = {
     //     title: "ПРОШЛА КОНФЕРЕНЦИЯ MAXIMA SCHOOL1",
@@ -48,6 +49,7 @@ const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
     };
     return (
         <>
+
             <Modal title="Title" open={isNewsWinOpen} onOk={handleNewsWinOk} onCancel={handleNewsWinCancel}>
                 <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
                     <Input placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
@@ -59,7 +61,8 @@ const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
                         onChange={e => setTeacherFlag(!teacherFlag)}
                     >forTeachers</Checkbox>
                     <TextArea rows={4} placeholder="Текст" value={text} onChange={(e) => setText(e.target.value)} />
-                </Space>
+                    <button>Добавить</button>
+                 </Space>
             </Modal>
         </>
     );
