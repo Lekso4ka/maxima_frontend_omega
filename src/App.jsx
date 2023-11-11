@@ -2,9 +2,11 @@
 import React, {useEffect} from 'react'
 import './style/style.scss'
 import LayoutBase from './containers/LayoutBase'
+
 // import AuthService from "./core/services/AuthService";
 // import {useDispatch} from "react-redux";
 // import {login, logOut} from "./core/store/features/user/userSlice";
+
 
 
 function App() {
@@ -19,10 +21,12 @@ function App() {
 
 
 
+
       return (
         <LayoutBase />
+
+
     )
-  
 }
 
 

@@ -8,6 +8,7 @@ import { Button } from "antd";
 import './style.scss'
 
 function Nav() {
+
       return <nav>
             <Link to="/">Главная</Link>
             <Link to="/courses">Курсы</Link>
@@ -16,7 +17,6 @@ function Nav() {
             <Link to="/materials">Материалы</Link>
       </nav>
 }
-
 
 const Header = () => {
       const dispatch = useDispatch()
@@ -29,6 +29,7 @@ const Header = () => {
                   <Button onClick={logOutHandler} icon={<LogoutOutlined />} />
 
             </header>
+
       )
 
 }
