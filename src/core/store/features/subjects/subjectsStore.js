@@ -17,11 +17,11 @@ export const subjectsStore = createSlice({
        addSubjects: (state, action) => {
             
             state.data.push({
-                id:state.data[state.date.length -1].id +1,
+                id:state.data[state.data.length -1].id +1,
                 text: action.payload
             })
        },
-        dellsubjects: (state, action) => {
+        dellSubjects: (state, action) => {
            state.data = state.data.filter(el => el.id !== action.payload)
         }
     },

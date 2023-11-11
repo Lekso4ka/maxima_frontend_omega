@@ -16,7 +16,7 @@ function ModalWin({ setOpenModal, children }) {
             <p>Поздравляем!</p>
           </div> */}
           {children}
-          <img src="./images/cathello.jpg" alt="" />
+          {/* <img src="./images/cathello.jpg" alt="" /> */}
           <div className={'footerModal'}>
             <button className={'cancel'}
               onClick={() => {

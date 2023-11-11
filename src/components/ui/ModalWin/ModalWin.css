@@ -12,10 +12,10 @@
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   margin: auto;
   width: 500px;
-  height: 90%;
+  max-height: 90%;
   background-color: white;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -52,18 +52,19 @@ img {
 }
 
 .footerModal {
-  position: relative;
-  top: 100px;
+  /* position: relative; */
+  /* top: 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .footerModal button {
   width: 150px;
   height: 45px;
-  left: 300px;
-  margin: 10px;
+  /* left: 300px; */
+  /* margin: 10px; */
   border: none;
   background-color: cornflowerblue;
   color: white;
@@ -74,4 +75,10 @@ img {
 
 .footerModal button:hover {
   background-color: crimson;
+}
+.footerModal .cancel {
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
