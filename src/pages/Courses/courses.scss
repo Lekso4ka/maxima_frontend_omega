@@ -1,0 +1,70 @@
+.courses {
+    font-size: 30px;
+    color: #703e7c;
+    padding: 15px; 
+}
+.wrapper_disciplines {
+    display: flex;
+
+}
+
+
+.open_button{
+    display: flex;
+    background: #410241;
+    color: #f5ecec;
+    border-radius: 7px;
+    font-size: 25px;
+  
+}
+
+.disciplines {
+    font-size: 25px;
+    color: #6b6a6a;
+    padding: 15px;
+    
+}
+
+.subjects {
+    font-size: 15px;
+    color: #15021a;
+    padding: 7px;
+    margin-top: 6px ;
+}
+
+.del {
+    border-bottom: 1px solid #aaaaaa;
+    border-radius: 5px;
+  margin: 5px;
+  margin-left: 30px;
+  background: #c7a3c7;
+  color: #f5ecec;
+}
+.button_disciplines{
+    outline: 0;
+    border: none;
+   background: #a5a4a4;
+   font-size: 12px;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   padding: 8px;
+   border-radius: 7px;
+   color: #f5ecec;
+   margin-top: 110px ;
+   margin: 50px;
+}
+
+.cancel{
+    outline: 0;
+    border: none;
+   background: #8f688f;
+   font-size: 14px;
+   font-family: sans-serif;
+   display: flex;
+   padding: 8px;
+   border-radius: 7px;
+   color: #f5ecec;
+   margin: 15px;
+  margin-left: 10px;
+
+}

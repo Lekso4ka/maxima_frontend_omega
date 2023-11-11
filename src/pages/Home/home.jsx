@@ -23,6 +23,7 @@ const Home = () => {
                 {modalOpen && <ModalWin setOpenModal={setModalOpen}> 
                     <h2>Вы только что открыли модальное окно! </h2>
                     <p>Поздравляем!</p>
+                    <img src="./images/cathello.jpg" alt="" />
                 </ModalWin>}
             </div>
         </>

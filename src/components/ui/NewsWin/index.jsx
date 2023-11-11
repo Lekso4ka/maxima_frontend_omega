@@ -1,34 +1,47 @@
 import { Input, Modal, Space, Checkbox, Image } from 'antd';
 import TextArea from "antd/es/input/TextArea";
 import { useState } from "react";
-import ModalWin from "../ModalWin/ModalWin";
 
 
 const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
     const [title, setTitle] = useState('');
     const [text, setText] = useState('');
-    const [titleImage, setTitleImage] = useState('');
-    const [data, setData] = useState({});
+    const [teacherFlag, setTeacherFlag] = useState(true);
+    const [studentFlag, setStudentFlag] = useState(true);
+    const [img, setImg] = useState("");
 
 
-    const onChange = (e) => {
-        console.log(`checked = ${e.target.checked}`);
-    };
+    // const onChange = (e) => {
+    //     console.log(`checked = ${e.target.checked}`);
+    // };
 
 
+    // const dataNews = {
+    //     title: "ПРОШЛА КОНФЕРЕНЦИЯ MAXIMA SCHOOL1",
+    //     titleImage: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    //     forStudents: true,
+    //     forTeachers: false,
+    //     text: "На конференции компания MAXIMA SCHOOL продемонстрировала 11 экспериментальных инструментов и функций. Это новые творческие возможности использования новых технологий генеративного ИИ и 3D",
+    //     createdAt: "2023-10-21"
+    // };
 
-    const handleNewsWinOk = (e) => {
-        e.preventDefault();
-        const dataNews = {
+    const handleNewsWinOk = () => {
+        // console.log(dataNews)
+        const result = {
             title: title,
-            titleImage: titleImage,
-            forStudents: true,
-            forTeachers: false,
+            titleImage: img,
+            forStudents: studentFlag,
+            forTeachers: teacherFlag,
             text: text,
             createdAt: new Date().toISOString()
-        };
-        setData(dataNews)
-        console.log(dataNews)
+        }
+        console.log(result)
+        setIsNewsWinOpen(false);
+        setTitle("")
+        setImg("")
+        setText("")
+        setStudentFlag(true)
+        setTeacherFlag(true)
     };
 
     const handleNewsWinCancel = () => {
@@ -36,20 +49,21 @@ const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
     };
     return (
         <>
-            {/* <Modal title="Title" open={isNewsWinOpen} onOk={handleNewsWinOk} onCancel={handleNewsWinCancel}>
-                <Space direction="vertical" size="middle" style={{ display: 'flex' }}> */}
-            <ModalWin setOpenModal={setIsNewsWinOpen}>
-                <form onSubmit={handleNewsWinOk}>
-                    <input placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
-                    <input type="url" value={titleImage} src=" " placeholder="Image"  />
-                     <Checkbox onChange={onChange}>forStudents</Checkbox>
-                <Checkbox onChange={onChange}>forTeachers</Checkbox> 
+
+            <Modal title="Title" open={isNewsWinOpen} onOk={handleNewsWinOk} onCancel={handleNewsWinCancel}>
+                <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+                    <Input placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
+                    <Image width={300} src={img} />
+                    <Input placeholder="Image" value={img} onChange={(e) => setImg(e.target.value)} />
+                    <Checkbox checked={studentFlag} onChange={e => setStudentFlag(e.target.checked)}>forStudents</Checkbox>
+                    <Checkbox 
+                        checked={teacherFlag} 
+                        onChange={e => setTeacherFlag(!teacherFlag)}
+                    >forTeachers</Checkbox>
                     <TextArea rows={4} placeholder="Текст" value={text} onChange={(e) => setText(e.target.value)} />
                     <button>Добавить</button>
-                </form>
-            </ModalWin>
-            {/*      </Space>
-            </Modal> */}
+                 </Space>
+            </Modal>
         </>
     );
 };

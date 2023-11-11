@@ -1,18 +1,20 @@
 header {
     display: flex;
+    height: 170px;
     justify-content: space-between;
-    color: rgb(221, 195, 245);
+    color: rgb(213, 210, 214);
     align-items: center;
-    padding: 10px;
+    padding: 35px;
+    background: rgb(241, 228, 247);
 }
 
 .header__logo {
 
     
-    font-weight: 900;
+    font-weight: 1100;
 }
 
 nav {
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }

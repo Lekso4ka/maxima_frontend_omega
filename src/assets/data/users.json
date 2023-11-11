@@ -1,0 +1,121 @@
+ [
+       {
+         "role": "TEACHER",
+         "firstName": "Elena",
+         "lastName": "Kolosova",
+         "patronymic": "Ivanovna",
+         "email": "elena0@mail.com",
+         "login": "ele77na",
+         "gender":"FEMALE" ,
+         "birthDate": "2001-05-17"
+       },{
+         "role": "TEACHER",
+         "firstName": "Alexandr",
+         "lastName": "Petrov",
+         "patronymic": "Valerevich",
+         "email": "Alexandr@mail.com",
+         "login": "alex77",
+         "gender": "MALE" ,
+         "birthDate": "1990-03-12"
+     }, {
+       "role":"TEACHER" ,
+       "firstName": "Denis",
+       "lastName": "Kovalev",
+       "patronymic": "Andreevich",
+       "email": "Denis@mail.com",
+       "login": "d44nis",
+       "gender":"MALE" ,
+       "birthDate": "1995-01-14"
+     },
+   {
+       "role": "STUDENT",
+       "firstName": "Anna",
+       "lastName": "Pavlova",
+       "patronymic": "Nikolaevna",
+       "email": "Anna@bloomberg.com",
+       "login": "a7b2",
+       "gender":"FEMALE" ,
+       "birthDate": "1997-03-26"
+       },{
+       "role": "STUDENT",
+       "firstName": "Alex",
+       "lastName": "Nguyen",
+       "patronymic": "Ivanovith",
+       "email": "Alex@mail.com",
+       "login": "al2xx4",
+       "gender":"MALE" ,
+       "birthDate": "1985-07-14"
+     },{
+       "role":"STUDENT" ,
+       "firstName": "Maxim",
+       "lastName": "Sedush",
+       "patronymic": "Ivanovith",
+       "email": "Maxim@bloomberg.com",
+       "login": "1max4",
+       "gender":"MALE" ,
+       "birthDate": "1997-03-16"
+       },{
+       "role":"STUDENT" ,
+       "firstName": "Elena",
+       "lastName": "Vasilenko",
+       "patronymic": "Vladimirovna",
+       "email": "Elena8@bloomberg.com",
+       "login": "elena24",
+       "gender":"FEMALE" ,
+       "birthDate": "2000-11-19"
+     },{
+       "role":"STUDENT",
+       "firstName": "Dmitriy",
+       "lastName": "Kovalev",
+       "patronymic": "Artemovith",
+       "email": "Dmitriy@bloomberg.com",
+       "login": "1dm34",
+       "gender":"MALE" ,
+       "birthDate": "1998-03-14"
+       },{
+       "role":"STUDENT",
+       "firstName": "Dmitriy",
+       "lastName": "Nguyen",
+       "patronymic": "Alexandrovith",
+       "email": "Dmitriy5@bloomberg.com",
+       "login": "dm8tr3",
+       "gender":"MALE" ,
+       "birthDate": "2001-07-04"
+     },{
+       "role": "STUDENT",
+       "firstName": "Nataliay",
+       "lastName": "Ivanova",
+       "patronymic": "Ivanovna",
+       "email": "Nataliay0@bloomberg.com",
+       "login": "8nat35",
+       "gender":"FEMALE" ,
+       "birthDate": "2004-02-07"
+       },{
+       "role": "STUDENT",
+       "firstName": "Alexandra",
+       "lastName": "Sedush",
+       "patronymic": "Andreevna",
+       "email": "Alexandra0@bloomberg.com",
+       "login": "alex88sa",
+       "gender":"FEMALE" ,
+       "birthDate": "2002-04-19"
+     },{
+       "role":"STUDENT",
+       "firstName": "Artem",
+       "lastName": "Yasen",
+       "patronymic": "Vladimirovith",
+       "email": "Artem@bloomberg.com",
+       "login": "art@02",
+       "gender":" MALE" ,
+       "birthDate": "2002-09-11"
+       },{
+       "role":"STUDENT" ,
+       "firstName": "Vladimir",
+       "lastName": "Vasielev",
+       "patronymic": "Vladimirovith",
+       "email": "Vladimir@bloomberg.com",
+       "login": "vla5dim4",
+       "gender":" MALE" ,
+       "birthDate": "1999-06-09"
+     }
+     ] 
