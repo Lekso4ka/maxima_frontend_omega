@@ -10,7 +10,9 @@ const initialState = {
 
 export const tagSlice = createSlice({
     name: 'tags',
+   
     initialState,
+
     reducers: {
         addTags: (state, action) => {
             state.data.push({
@@ -21,9 +23,14 @@ export const tagSlice = createSlice({
         dellTags: (state, action) => {
 
             state.data = state.data.filter(el => el.id !== action.payload)
-        }
-    }
-})
+        
+
+                }}
+                    })
+                
+    
+            
+        
 
 
 export const { addTags, dellTags } = tagSlice.actions

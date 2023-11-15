@@ -1,9 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalWin from '../../components/ui/ModalWin/ModalWin';
 import { addSubjects, dellSubjects } from '../../core/store/features/subjects/subjectsStore';
 import './courses.scss';
+import $api from '../../core/http'  
+
+
 
 const Courses = () => {
   const subjects = useSelector(state => state.subjects.data)
@@ -11,6 +14,39 @@ const Courses = () => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [subject, setSubject] = useState("");
+  
+
+  const [tags, setTags] = useState ([]);
+  const [tg, setTg] = useState ("");
+
+   useEffect (() => {
+$api.get("/disciplines")
+.then(result => {
+  console.log(result.data.data);
+  setTags(result.data.data)
+   })
+
+  }, [])
+  useEffect (() => {
+    $api.delete("/disciplines")
+    .then(result => {
+      console.log(result.data);
+      setTags(result.data)
+       })
+    
+      }, [])
+    
+  const tgHandler = async () => {
+const result = await $api.post("/disciplines",{name:tg})
+//.then(result =>{
+console.log(result)
+
+//})
+ 
+console.log(result);
+setTags(prev => [...prev, result.data])
+setTg("")
+}
 
   return (
     <>
@@ -43,6 +79,40 @@ const Courses = () => {
 
         </ModalWin>}
       </div>
+<div style={{
+padding:"20px",
+borderRadius:"10px",
+boxShadow:"0 0 5px #0004",
+marginTop: "20px",
+display:"flex",
+gap:"20px",
+flexWrap: "wrap"
+}}>
+{tags.map(tg =><span key={tg.id}>{tg.name}</span>)}
+<div style={{flex: 1,width:"100%"}}>
+<input
+ type='text'
+  value={tg}
+   onChange={e => setTg(e.target.value)}
+   />
+<button onClick={tgHandler}>Добавить в БД</button>
+<div>
+<button className="delete"  onClick={e => { 
+                dispatch(setTg(tg.id)); 
+              }}
+            >delete
+  <div class="cart_delete"onClick={e => { 
+                dispatch(setTg(tg.id)); 
+              }} >0</div>
+  </button>
+  
+          </div>
+  </div>
+           
+</div>
+
+
+
     </>
 
   );
