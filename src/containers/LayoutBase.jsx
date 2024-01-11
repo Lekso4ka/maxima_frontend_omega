@@ -7,7 +7,7 @@ import Courses from '../pages/Courses/courses';
 import Materials from '../pages/Materials/materials';
 import News from '../pages/News';
 import Users from '../pages/Users/users';
-
+import './LayoutBase.scss';
 
 const { Content, Footer } = Layout;
 
@@ -20,11 +20,11 @@ function LayoutBase() {
             <Header />
             <Content className={'container'}>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/courses" element={<Courses/>}/>
+                    <Route  path="/" element={<Home/>}/>
+                    <Route  path="/courses" element={<Courses/>}/>
                     <Route path="/users" element={<Users/>}/>
-                    <Route path="/news" element={<News/>}/>
-                    <Route path="/materials" element={<Materials/>}/>
+                    <Route   path="/news" element={<News/>}/>
+                    <Route  path="/materials" element={<Materials/>}/>
                 </Routes>
             </Content>
             <Footer>© Учебный центр Maxima</Footer>

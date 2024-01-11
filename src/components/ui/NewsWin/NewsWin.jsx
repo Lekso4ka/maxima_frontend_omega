@@ -1,18 +1,14 @@
 import { Input, Modal, Space, Checkbox, Image } from 'antd';
 import TextArea from "antd/es/input/TextArea";
 import { useState } from "react";
-import { useDispatch } from 'react-redux';
-import { addNews } from '../../../core/store/features/news/newsSlice';
-import $api from '../../../core/http';
+
 
 const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
-    const dispatch = useDispatch();
     const [title, setTitle] = useState('');
     const [text, setText] = useState('');
     const [teacherFlag, setTeacherFlag] = useState(true);
     const [studentFlag, setStudentFlag] = useState(true);
     const [img, setImg] = useState("");
-
 
 
     // const onChange = (e) => {
@@ -37,26 +33,15 @@ const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
             forStudents: studentFlag,
             forTeachers: teacherFlag,
             text: text,
-            forBlog: true,
-            forPartners: false,
-            isAttached: true
-            // createdAt: new Date().toISOString()
+            createdAt: new Date().toISOString()
         }
         console.log(result)
-        $api.post("/news", result)
-            .then(res => {
-                console.log(res)
-                if (res.status === 200) {
-                    setIsNewsWinOpen(false);
-                    setTitle("")
-                    setImg("")
-                    setText("")
-                    setStudentFlag(true)
-                    setTeacherFlag(true)
-                    dispatch(addNews(res.data))
-                }
-            })
-        
+        setIsNewsWinOpen(false);
+        setTitle("")
+        setImg("")
+        setText("")
+        setStudentFlag(true)
+        setTeacherFlag(true)
     };
 
     const handleNewsWinCancel = () => {
@@ -83,3 +68,13 @@ const NewsWin = ({ isNewsWinOpen, setIsNewsWinOpen }) => {
     );
 };
 export default NewsWin;
+	
+
+
+
+
+
+  
+
+
+

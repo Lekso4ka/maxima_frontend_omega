@@ -4,9 +4,8 @@ import { addTags, dellTags } from "../../core/store/features/tags/tagSlice";
 import { CloseOutlined } from "@ant-design/icons";
 import Title from "antd/lib/typography/Title";
 import { Button, Space } from "antd";
-import ModalTags from "../../containers/Modal/ModalTags";
-import ModalWinf from "../../components/ui/ModalWin/ModalWin";
-import ModalWin from '../../components/ui/ModalWin/ModalWin';
+import ModalWin from "../../components/ui/ModalWin/ModalWin";
+
 
 
 
